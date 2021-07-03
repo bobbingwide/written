@@ -13,3 +13,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text domain: written
 */
+
+
+/**
+Add registered style for images which grow when hovered.
+ */
+
+.is-style-grows img {
+    transition: all 1s ease;
+    margin: 0 2%;
+    max-width: 96%;
+}
+
+.is-style-grows img:hover {
+    margin: 0;
+    max-width: 100%;
+}
