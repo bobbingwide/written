@@ -29,3 +29,14 @@ Add registered style for images which grow when hovered.
     margin: 0;
     max-width: 100%;
 }
+
+/* Don't show the underlining on a site title link. */
+.wp-block-site-title a {
+   text-decoration: none;
+}
+/* When site title is hovered then show a small dotted underline. */
+.wp-block-site-title a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.05em;
+}
