@@ -57,3 +57,18 @@ Prevent media and text images from stretching.
 .wp-block-navigation img {
     height: auto;
 }
+/**
+Style the archive block's select dropdown.
+ */
+input,
+select,
+textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 0px;
+    width: 100%;
+}
+
