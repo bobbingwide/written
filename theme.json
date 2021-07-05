@@ -207,8 +207,23 @@
             "left": "5px"
           }
         }
+      },
+      "core/heading": {
+        "spacing": {
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "10px",
+            "left": "0px"
+          }
+        }
+      },
+    "oik-bbw/wp": {
+      "typography": {
+        "fontSize": "var( --wp--preset--font-size--title)"
       }
     }
+  }
   },
   "templateParts": [
     {
