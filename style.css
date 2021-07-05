@@ -40,3 +40,10 @@ Add registered style for images which grow when hovered.
     text-decoration-style: dotted;
     text-decoration-thickness: 0.05em;
 }
+
+/**
+Add CSS to prevent large and full sized images from losing their aspect ratio
+ */
+.wp-block-image img {
+    height: auto;
+}
