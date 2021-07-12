@@ -72,3 +72,74 @@ textarea {
     width: 100%;
 }
 
+/**
+Add registered style for heading where you don't want underlining.
+ */
+.is-style-plain a {
+    text-decoration: none;
+}
+
+/* When hovered then show a small dotted underline. */
+.is-style-plain a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.05em;
+}
+
+/**
+Add registered style called fancy, which can do what it likes
+to style parapgraphs, lists or other blocks.
+ */
+.is-style-fancy strong {
+    font-size: 150%;
+}
+
+.is-style-fancy code {
+    font-size: 110%;
+    background-color: var( --wp--preset--color--body-background );
+    padding: 2px;
+}
+
+/**
+ First attempt to flow the metadates template part onto one line using CSS grid.
+ */
+.is-style-griddled.wp-block-template-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.is-style-griddled p,
+span.post_modified {
+    font-size: var(--wp--preset--font-size--extra-small);
+}
+
+.wp-block-post-date,
+span.post_modified {
+    margin: 0 0;
+}
+
+div.wp-block-oik-sb-sb-post-edit-block {
+    margin: 0 0;
+}
+
+/**
+Put some blank space between posts on index.html
+ */
+.wp-block-post-template li {
+    margin-bottom: 20px;
+}
+
+hr.wp-block-separator {
+    border-bottom: 0px;
+}
+
+.is-style-flexed {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.is-style-flexed p,
+.is-style-griddled p {
+    margin: 0 10px 0 0;
+
+}
