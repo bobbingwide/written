@@ -88,11 +88,35 @@ function written_register_style() {
             'style_handle' => 'written-style',
         )
     );
+
+    /**
+     * Register Plain block style for plain links.
+     */
+    $plainstyle = array(
+        'name' => 'plain',
+        'label' => 'Plain',
+        'style_handle' => 'written-style',
+    );
+    $registered = register_block_style( 'core/heading', $plainstyle );
+    $registered = register_block_style( 'core/site-title', $plainstyle );
+    $registered = register_block_style( 'core/post-title', $plainstyle );
+    $registered = register_block_style( 'core/post-excerpt', $plainstyle );
+
+    /**
+     * Register Fancy block style for improved styling of certain blocks.
+     * Let's see if we can get it to work for a block that isn't a core block.
+     */
+    $fancystyle = ['name'=>'fancy', 'label'=> 'Fancy', 'style_handle' => 'written-style' ];
+    $registered = register_block_style( 'core/paragraph', $fancystyle );
+    $registered = register_block_style( 'core/list', $fancystyle );
+    $registered = register_block_style( 'oik-bbw/wp', $fancystyle );
     if ($registered) {
-        //echo "wahay";
+        bw_trace2( $registered, "registered OK", true, BW_TRACE_VERBOSE );
     } else {
-       // echo "boo";
+        bw_trace2( $registered, "BOO. Didn't register", true );
+        gob();
     }
+
 
 }
 
