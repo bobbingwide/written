@@ -102,20 +102,21 @@ to style parapgraphs, lists or other blocks.
 
 /**
  First attempt to flow the metadates template part onto one line using CSS grid.
+ Superseded by CSS flex.
  */
 .is-style-griddled.wp-block-template-part {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 
-.is-style-griddled p,
+.is-style-flexed p,
 span.post_modified {
     font-size: var(--wp--preset--font-size--extra-small);
 }
 
 .wp-block-post-date,
 span.post_modified {
-    margin: 0 0;
+    margin: 0 10px 0 0;
 }
 
 div.wp-block-oik-sb-sb-post-edit-block {
@@ -141,5 +142,9 @@ hr.wp-block-separator {
 .is-style-flexed p,
 .is-style-griddled p {
     margin: 0 10px 0 0;
+}
 
+.wp-block-group.is-style-flexed {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
