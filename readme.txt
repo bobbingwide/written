@@ -1,17 +1,16 @@
-# Written 
-![screenshot](https://raw.githubusercontent.com/bobbingwide/Written/main/screenshot.png)
-* Contributors: bobbingwide
-* Donate link: https://www.oik-plugins.com/oik/oik-donate/
-* Tags: blocks, FSE, Gutenberg
-* Requires at least: 5.5.1
-* Tested up to: 5.8-RC2
-* Version: 0.0.0
-* License: GPLv2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== Written ===
+Contributors: bobbingwide
+Donate link: https://www.oik-plugins.com/oik/oik-donate/
+Tags: blocks, FSE, Gutenberg
+Requires at least: 5.5.1
+Tested up to: 5.8-RC2
+Version: 0.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Written theme - Experimental Full Site Editing theme replacing genesis-hm
 
-## Description 
+== Description ==
 This is an experimental theme attempting to implement Full Site Editing (FSE).
 
 The theme is required to replace the Genesis-hm theme that is used on [herbmiller.me](https://herbmiller.me)
@@ -36,7 +35,7 @@ The `block-templates` are:
 * shortcode_unautop.html
 
 
-* See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
+See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 
 The `block-template-parts` are:
 
@@ -51,7 +50,7 @@ The `block-template-parts` are:
 * sidebar
 
 
-## Installation 
+== Installation ==
 
 * Either install Gutenberg 11.0.0 or higher or install and build the latest Gutenberg source.
 * Activate Gutenberg.
@@ -59,20 +58,20 @@ The `block-template-parts` are:
 * Install and activate the Written theme. Full Site Editing will be enabled automatically.
 * For some of the templates and template parts to work properly you will need to install and activate the pre-requisite plugins.
 
-* Pre-requisite plugins: see also Notes
+Pre-requisite plugins: see also Notes
 
 * [oik](https://wordpress.org/plugins/oik/)
 * [oik-fields v1.52.0](https://github.com/bobbingwide/oik-fields)
 * [sb-breadcrumbs-block](https://github.com/bobbingwide/sb-breadcrumbs-block)
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) - for breadcrumbs logic
-* [SB Post Edit block](https://github.com/bobbingwide/sb-post-edit-block)
+* [SB Post Edit block](https://github.com/bobbingwide/sb-post-edit-block) 
 * [oik-blocks v0.6.0](https://github.com/bobbingwide/oik-blocks)
 
 
 
-## Change Log 
+== Change Log ==
 
-# 0.1.0 
+= 0.1.0 =
 * Changed: Set metadates paragraph size to extra-small
 * Added: Create screenshot.html template to create a screenshot
 * Added: Implement navigation link overrides - copied from ThisIs...
@@ -82,7 +81,7 @@ The `block-template-parts` are:
 * Tested: With WordPress 5.8-RC2
 * Tested: With PHP 8.0
 
-# 0.0.0 
+= 0.0.0 =
 
 * Style post edit block consistent with other metadates fields
 * Switch to using CSS flex rather than grid and improve Category and Tags display
@@ -118,18 +117,18 @@ The `block-template-parts` are:
 * Initial commit
 
 
-### Block overrides 
+=== Block overrides ===
 
-Written may contain a number of overrides to Gutenberg server rendered blocks which didn't behave the way I expected.
+Written may contain a number of overrides to Gutenberg server rendered blocks which didn't behave the way I expected. 
 
 Improvement areas include:
 
-* Navigation link - changes hardcoded links from s.b/hm to the site URL
+* Navigation link - changes hardcoded links from s.b/hm to the site URL 
 
-## Copyright 
+== Copyright ==
 (C) Copyright Herb Miller, Bobbing Wide 2021
 
-* This program is free software: you can redistribute it and/or modify
+This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
