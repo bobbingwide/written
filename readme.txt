@@ -71,6 +71,9 @@ Pre-requisite plugins: see also Notes
 
 == Change Log ==
 
+= 0.1.1 =
+* Changed: Style featured image as Grows #1
+
 = 0.1.0 =
 * Changed: Set metadates paragraph size to extra-small
 * Added: Create screenshot.html template to create a screenshot
@@ -82,7 +85,6 @@ Pre-requisite plugins: see also Notes
 * Tested: With PHP 8.0
 
 = 0.0.0 =
-
 * Style post edit block consistent with other metadates fields
 * Switch to using CSS flex rather than grid and improve Category and Tags display
 * Add clone.html template part
