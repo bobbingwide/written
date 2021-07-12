@@ -134,6 +134,13 @@ function written_init() {
         written_register_style();
     }
 }
-//require_once __DIR__ . '/includes/block-overrides.php';
+
+require_once __DIR__ . '/includes/block-overrides.php';
+
+if ( !function_exists( "bw_trace2" ) ) {
+    function bw_trace2( $content, $args) {
+        return $content;
+    }
+}
 
 written_loaded();
