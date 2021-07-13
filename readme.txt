@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg
 Requires at least: 5.5.1
 Tested up to: 5.8-RC2
-Version: 0.0.0
+Version: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,8 +20,6 @@ Requirements:
 2. Similar look and feel as the Genesis-hm theme.
 3. Implement on herbmiller.me when stable.
 
-
-
 Contents:
 
 *  templates
@@ -30,9 +28,10 @@ Contents:
 The `block-templates` are:
 
 * index.html
-* single-product.html
 * no-sidebar.html
+* screenshot.html
 * shortcode_unautop.html
+* singular.html
 
 
 See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
@@ -47,8 +46,10 @@ The `block-template-parts` are:
 * metadates
 * metadates-issue-33345
 * query-sidebar
+* query-sidebar-short
 * sidebar
-
+* sidebar-short
+* social-links
 
 == Installation ==
 
@@ -70,9 +71,14 @@ Pre-requisite plugins: see also Notes
 
 
 == Change Log ==
+= 0.1.2 =
+* Changed: Force social links into a vertical list using a narrow column
+* Changed: Update screenshot of 'Written' post rather than page.
+* Changed: Add custom.css copied from genesis-hm #10
+* Changed: Add missing social icons as listed by [bw_follow_me alt=0],#1
 
 = 0.1.1 =
-* Changed: Style featured image as Grows #1
+* Changed: Style featured image as Grows,#1
 
 = 0.1.0 =
 * Changed: Set metadates paragraph size to extra-small
