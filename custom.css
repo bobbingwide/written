@@ -1,0 +1,518 @@
+/* (C) Copyright Bobbing Wide 2015, 2017, 2019 */
+/* Custom.css for genesis-hm theme */
+/* Note that this doesn't get ZIPped by tip.bat */
+
+/**
+ * Overrides to genesis theme style.css for: 
+ * - Colours
+ * - Fonts 
+ * - Padding and margins 
+ * - Media queries
+ * 
+ * Let's see if this works!
+ * 
+ */
+.site-header {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+
+.site-title a,
+.site-title a:hover,
+.site-title a:focus {
+	color: #ffffff;
+}
+
+.genesis-nav-menu a {
+   background: #D2D28E;
+   background: linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   background: -moz-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   background: -o-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   background: -ms-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   background: linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   -svg-background: linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
+   color: #5F5F26;
+}
+
+.genesis-nav-menu a {
+   border:1px solid #D2D28E;
+	 border-radius: 1px;
+   padding: 5px 17px;
+   margin: 30px 3px 2px 3px;
+   text-decoration: none;
+}
+
+.sub-menu a {
+	margin: 0px 3px 2px 3px;
+}
+
+.site-footer {
+	background-color: #d5e0c1;
+}
+
+.site-title {
+	font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+	font-size: 41px;
+	font-size: 4.1rem;
+	font-weight: 400;
+}
+
+
+/**
+ * We want the header image AND the title / description
+ 
+
+	background: 
+		url( 'images/logo.png' ) no-repeat bottom left;
+	background-size: 60px, auto;
+ */
+
+
+
+
+.header-image .site-title > a {
+}
+
+.title-area {
+
+	background: url(images/logo.png) no-repeat left;
+	float: left;
+	min-height: 70px;
+	
+	
+	background-size: 70px, auto;
+	background-color: #222;
+}
+
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
+	/* width: 25%; */
+	padding-right: 1%;
+	float:left;
+	margin-top: 20px;
+}
+
+.footer-widgets-1 {
+	width: 33%;
+}
+
+.footer-widgets-2 {
+	width: 33%;
+}
+
+.footer-widgets-3 {
+	width: 14%;
+}
+
+.footer-widgets-4 {
+	width: 20%;
+}
+	
+.responsive-menu-icon::before {
+	color: #053b93;
+}
+
+span.bw_follow_me:hover {
+	color: #f5f5f5;
+}
+
+div.center img.full {
+	display: block;
+	margin: 0 auto;
+}
+
+section#text-16 { background: transparent; padding: 0;}
+
+
+
+div.hover img.full { 
+    position: relative; 
+    margin: 0 auto; 
+    width: 100%;
+    
+}
+
+div.hover img.full:hover { 
+    opacity: 0.4;
+		
+		border: 1px solid grey;
+}   
+
+div.hover { 
+    position: relative;  
+}
+
+div.hover a { 
+	display:block; 
+}
+
+div.hover:after {
+    padding-top: 150%;
+  }
+  
+div.hover p { 
+    position: relative; 
+    width: 100%; 
+    overflow: hidden; 
+    -webkit-margin-before: 0px; 
+    -webkit-margin-after: -2px; 
+}
+div.hover span.title { 
+    display: block; 
+    bottom: 0%; 
+    position: absolute; 
+    margin: 0 auto; 
+    width: 100%;
+    padding: 2px 2px 2px 8px;
+}
+div.hover p.caption { 
+    position: absolute; 
+    top: 50%; 
+}
+div.hover p.description { 
+    position: absolute; 
+    top: 80%; 
+ }
+
+div.hover span.title,
+div.hover p.caption,
+div.hover p.description { 
+    visibility: hidden;
+}
+
+
+div.hover:hover span.title {
+    visibility: visible;
+}
+
+div.hover:hover {
+    color: #fff;
+}
+
+div.hover:hover span.title {
+    background: #333;
+}
+
+div.hover a:-webkit-any-link {
+    text-decoration: none;
+}
+
+img.full,
+div.hover {
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+}
+
+
+.sidebar-primary .widget ul li:nth-of-type( odd ) {
+	background-color: #f5f5f5;
+	/* margin: 3px 0; */
+}
+
+.sidebar-primary .widget ul li li {
+	margin: 3px 0 3px 30px;
+}
+
+
+
+img.post-image,
+div.featured img.featured {
+    transition: all 1s ease;   
+    margin: 0 2%;
+		max-width: 96%;
+}
+
+img.post-image:hover,
+div.featured img.featured:hover {  
+    margin: 0;
+		max-width: 100%;
+}
+
+/**
+
+div.bw_tides_0 a:nth-of-type(2):after {
+	content:"\000A";
+	white-space: pre;
+}
+*/
+
+div.bw_tides_0 span:nth-of-type(2) {
+	display: block;
+	padding-bottom: 5px;
+}
+
+.bw_geshi.none { color: #ffffff; background-color: #040204; }
+.bw_geshi pre { font-size: 0.75em; }
+.bw_geshi.php { background-color: #eee; width: 100%; font-size: 0.8em; margin-bottom: 5px; }
+
+
+table.bw_plug { }
+.bw_plug td:nth-of-type( 1 ) { width: 50%; }
+.bw_plug td:nth-of-type( 2 ) { width: 30%; text-align: center; vertical-align: middle; }
+.bw_plug td:nth-of-type( 3 ) { width: 20%; text-align: right; vertical-align: middle;}
+.bw_plug .links { width: 30%; text-align: center; vertical-align: middle;}
+.bw_plug .vtdlut { width: 30%; text-align: right; vertical-align: middle; }
+
+
+
+/**
+ * Reduce the sidebar padding at 1050px 
+ */
+@media only screen and ( max-width: 1050px ) {
+	.sidebar .widget { 
+		padding: 20px 0.5%;
+	}
+}
+
+
+/**
+ * Lose the sidebar at 960px 
+ */
+@media only screen and ( max-width: 960px ) {
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.content,
+	.sidebar-primary,
+	.sidebar-secondary  {
+		width: 100%;
+	}
+	
+	.sidebar .widget { 
+		padding: 20px 2%;
+	}
+	
+}
+	
+
+
+@media only screen and ( max-width: 480px ) {
+
+.responsive-menu-icon::before {
+	color: #fff;
+	content: "\f333";
+	font: normal 24px/1 "dashicons";
+	margin: 0 auto;
+}
+
+
+	.genesis-nav-menu.responsive-menu {
+		display: none;
+		float: none;
+		padding-bottom: 20px;
+	}
+
+	.genesis-nav-menu.responsive-menu .menu-item,
+	.responsive-menu-icon {
+		display: block;
+	}
+
+	.genesis-nav-menu.responsive-menu .menu-item:hover {
+		position: static;
+	}
+
+	.genesis-nav-menu.responsive-menu li.current-menu-item > a,
+	.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover,
+	.genesis-nav-menu.responsive-menu li a,
+	.genesis-nav-menu.responsive-menu li a:hover {
+		background: none;
+		border: none;
+		display: block;
+		padding: 10px 0;
+		text-transform: none;
+	}
+
+	.genesis-nav-menu.responsive-menu .menu-item-has-children {
+		cursor: pointer;	
+	}
+
+	.genesis-nav-menu.responsive-menu .menu-item-has-children > a {
+		margin-right: 60px;
+	}
+
+	.genesis-nav-menu.responsive-menu > .menu-item-has-children:before {
+		content: "\f347";
+		float: right;
+		font: normal 20px/1 "dashicons";
+		height: 20px;
+		padding: 7px 20px;
+		right: 0;
+		text-align: right;
+		z-index: 9999;
+	}
+
+	.genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before {
+		content: "\f343";
+	}
+
+	.genesis-nav-menu.responsive-menu > .menu-item > .sub-menu {
+		display: none;
+	}
+
+	.genesis-nav-menu.responsive-menu .sub-menu {
+		background-color: rgba(255, 255, 255, 0.05);
+		left: auto;
+		opacity: 1;
+		position: relative;
+		-moz-transition:    opacity .4s ease-in-out;
+		-ms-transition:     opacity .4s ease-in-out;
+		-o-transition:      opacity .4s ease-in-out;
+		-webkit-transition: opacity .4s ease-in-out;
+		transition:         opacity .4s ease-in-out;
+		width: 100%;
+		z-index: 99;
+	}
+
+	.genesis-nav-menu.responsive-menu .sub-menu .sub-menu {
+		background-color: transparent;
+		margin: 0;
+		padding-left: 25px;
+	}
+
+	.genesis-nav-menu.responsive-menu .sub-menu li a,
+	.genesis-nav-menu.responsive-menu .sub-menu li a:hover {
+		padding: 10px 0;
+		position: relative;
+		text-transform: none;
+		width: 100%;
+	}
+
+	.genesis-nav-menu.responsive-menu .current-menu-item > a,
+	.genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+	.genesis-nav-menu.responsive-menu > li.menu-item-has-children:hover > a,
+	.genesis-nav-menu.responsive-menu a:hover {
+		background: none;
+	}
+
+}
+
+
+@media only screen and ( max-width: 480px ) {
+	.site-header .wrap {
+		padding: 0px; 
+	}
+	
+	.site-header .widget-area {
+		width: 100%;
+	}
+	
+	.title-area { 
+		width: 100%;
+		max-width: 100%;
+		padding: 0px;
+	}
+	
+	.genesis-nav-menu a {
+		margin-top: 2px;
+	}
+	
+	.genesis-nav-menu a:hover, 
+	.genesis-nav-menu a:focus, 
+	.genesis-nav-menu .current-menu-item > a, 
+	.genesis-nav-menu .sub-menu .current-menu-item > a:hover, 
+	.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+		color: #5f5f26;
+	}
+
+	.site-inner,
+	.wrap {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	
+	span.splitbar { display:none;  }
+	span.lastupdated { display: block; clear: both; }
+
+
+}
+
+
+
+figure.wp-block-image { 
+	background-color: #dddddd; 
+	padding: 4px;
+}
+
+
+figure.wp-block-image.new::before { 
+	content: "New";
+}
+
+
+figure.wp-block-image.classic::before { 
+	content: "classic";
+}
+
+figure.wp-block-image.Classic:before {
+	content: "Classic - mixed case";
+}
+
+/**
+ * Extra space for the first block's toobar 
+ */
+.editor-post-title div {
+    margin-bottom: 13px;
+}
+
+pre.wp-block-code.serif code,
+code.wp-block-asis.serif {
+	font-family: serif
+}
+
+pre.wp-block-code.sans code, 
+code.wp-block-asis.sans,
+pre.wp-block-free.sans {
+	font-family: sans-serif;
+}
+
+pre.wp-block-free {
+	margin: 0px;
+}
+
+/**
+ * CSS for hacking the size of SVG icons
+ * without changing width= height= and viewBox=
+ */
+svg.svg32 {
+	width: 32px;
+	height: 32px;
+} 
+
+svg.svg48 {
+	width: 48px;
+	height: 48px;
+} 
+
+
+code.svg64 svg, 
+svg.svg64 {
+	width: 64px;
+	height: 64px;
+}
+
+code svg {
+	display: block;
+}
+code.svg64 td {
+	width: 16.666%;
+	padding-top: 30px;
+	border-top: 0px solid #ffffff;
+	font-size: 16px;
+}
+
+div.textwidget p.warning {
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+}
+
+
