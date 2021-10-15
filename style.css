@@ -4,7 +4,7 @@ Theme URI: https://www.oik-plugins.com/oik-themes/written
 Description: An experimental FSE theme to replace Genesis-hm
 Author: Bobbing Wide
 Author URI: https://www.oik-plugins.com/author/bobbingwide
-Version: 0.1.2
+Version: 0.1.4
 Tags: blocks, Gutenberg, FSE, oik, Full Site Editing
 Requires at least: 5.7.0
 Requires PHP: 7.3
@@ -101,7 +101,7 @@ to style parapgraphs, lists or other blocks.
 }
 
 /**
- First attempt to flow the metadates template part onto one line using CSS grid.
+ First attempt to flow the metadates template part onto one line using CSS flex.
  Superseded by CSS flex.
  */
 .is-style-griddled.wp-block-template-part {
@@ -125,9 +125,15 @@ div.wp-block-oik-sb-sb-post-edit-block {
 
 /**
 Put some blank space between posts on index.html
+but not between list items in the post content
  */
-.wp-block-post-template li {
+ul.wp-block-post-template li {
     margin-bottom: 20px;
+}
+
+ul.wp-block-post-template li ul li,
+ul.wp-block-post-template ol li {
+    margin-bottom: 5px;
 }
 
 hr.wp-block-separator {
