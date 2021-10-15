@@ -3,8 +3,8 @@ Contributors: bobbingwide
 Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg
 Requires at least: 5.5.1
-Tested up to: 5.8-RC2
-Version: 0.1.2
+Tested up to: 5.8.1
+Version: 0.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,9 @@ Pre-requisite plugins: see also Notes
 
 
 == Change Log ==
+= 0.1.4 =
+* Changed: Improve styling with left and right padding/margins and normal font sizes #13
+
 = 0.1.3 = 
 * Changed: Remove Follow me from sidebar-short. 
 * Changed: Use social-links rather than sidebar-short in query-sidebar-short
