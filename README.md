@@ -72,6 +72,10 @@ The `block-template-parts` are:
 
 
 ## Change Log 
+# 0.1.3 
+* Changed: Remove Follow me from sidebar-short.
+* Changed: Use social-links rather than sidebar-short in query-sidebar-short
+
 # 0.1.2 
 * Changed: Force social links into a vertical list using a narrow column
 * Changed: Update screenshot of 'Written' post rather than page.
