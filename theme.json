@@ -13,7 +13,8 @@
     },
     "color": {
       "link": true,
-      "gradient": false,
+      "customGradient": false,
+      "gradients": [],
       "palette": [
         {
           "slug": "white",
@@ -48,7 +49,7 @@
       ]
     },
     "typography": {
-      "customFontSize": true,
+      "customFontSize": false,
       "customFontStyle": true,
       "customFontWeight": true,
       "customLineHeight": false,
@@ -83,8 +84,13 @@
         },
         {
           "slug": "normal",
+          "size": "16px",
+          "name": "normal 16px"
+        },
+        {
+          "slug": "medium",
           "size": "20px",
-          "name": "H4 normal 20px"
+          "name": "H4 medium 20px"
         },
         {
           "slug": "large",
@@ -163,7 +169,7 @@
         },
         "typography": {
           "customFontSize": true,
-          "fontSize": "var( --wp-preset--font-size--normal)",
+          "fontSize": "var( --wp--preset--font-size--medium)",
           "fontWeight": "var( --wp--preset--font-weight--normal )"
         }
       },
