@@ -1,4 +1,4 @@
-/* (C) Copyright Bobbing Wide 2015, 2017, 2019 */
+/* (C) Copyright Bobbing Wide 2015, 2017, 2019, 2021 */
 /* Custom.css for genesis-hm theme */
 /* Note that this doesn't get ZIPped by tip.bat */
 
@@ -250,8 +250,8 @@ div.bw_tides_0 span:nth-of-type(2) {
 }
 
 .bw_geshi.none { color: #ffffff; background-color: #040204; }
-.bw_geshi pre { font-size: 0.75em; }
-.bw_geshi.php { background-color: #eee; width: 100%; font-size: 0.8em; margin-bottom: 5px; }
+.bw_geshi pre { }
+.bw_geshi.php { background-color: #eee; margin-bottom: 5px; }
 
 
 table.bw_plug { }
@@ -514,5 +514,29 @@ div.textwidget p.warning {
 	color: black;
 	font-weight: bold;
 }
+
+/* Add some left and right padding */
+
+h2.wp-block-post-title {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.wp-block-post-content p,
+.wp-block-post-excerpt p,
+.wp-block-post-content h2,
+.wp-block-post-content h3,
+.wp-block-post-content h4,
+.wp-block-table {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Add some left and right margins */
+div.bw_geshi {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
 
 
