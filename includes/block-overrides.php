@@ -23,6 +23,7 @@ require_once __DIR__ . '/block-override-functions.php';
 //require_once __DIR__ . '/template-part.php';
 //require_once __DIR__ . '/navigation.php';
 require_once __DIR__ . '/navigation-link.php';
+require_once __DIR__ . '/navigation-submenu.php';
 //require_once __DIR__ . '/post-hierarchical-terms.php';
 //require_once __DIR__ . '/block.php';
 
@@ -47,6 +48,7 @@ function written_register_block_type_args( $args ) {
     //$args = written_maybe_override_block(  $args,'core/template-part', 'render_block_core_template_part' );
     //$args = written_maybe_override_block(  $args,'core/navigation', 'render_block_core_navigation' );
     $args = written_maybe_override_block(  $args,'core/navigation-link', 'render_block_core_navigation_link' );
+	$args = written_maybe_override_block(  $args,'core/navigation-submenu', 'render_block_core_navigation_submenu' );
     //$args = written_maybe_override_block(  $args,'core/post-hierarchical-terms', 'render_block_core_post_hierarchical_terms' );
     //$args = written_maybe_override_block(  $args,'core/block', 'render_block_core_block' );
     return $args;
