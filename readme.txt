@@ -1,19 +1,17 @@
 === Written ===
 Contributors: bobbingwide
 Donate link: https://www.oik-plugins.com/oik/oik-donate/
-Tags: blocks, FSE, Gutenberg
+Tags: blocks, FSE, Gutenberg, full-site-editing
 Requires at least: 5.5.1
-Tested up to: 5.8.1
-Version: 0.1.4
+Tested up to: 5.9.1
+Version: 0.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Written theme - Experimental Full Site Editing theme replacing genesis-hm
+Written theme - Full Site Editing theme replacing genesis-hm
 
 == Description ==
-This is an experimental theme attempting to implement Full Site Editing (FSE).
-
-The theme is required to replace the Genesis-hm theme that is used on [herbmiller.me](https://herbmiller.me)
+This theme implements a Full Site Editing (FSE) replacement of the Genesis-hm theme that was used on [herbmiller.me](https://herbmiller.me)
 
 Requirements:
 1. Implement Full Site Editing.
@@ -25,8 +23,9 @@ Contents:
 *  templates
 *  template parts
 
-The `block-templates` are:
+The `templates` are:
 
+* 404.html
 * index.html
 * no-sidebar.html
 * screenshot.html
@@ -36,8 +35,9 @@ The `block-templates` are:
 
 See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 
-The `block-template-parts` are:
+The `parts` are:
 
+* 404-not-found
 * clone
 * content-sidebar
 * footer
@@ -71,6 +71,19 @@ Pre-requisite plugins: see also Notes
 
 
 == Change Log ==
+= 0.2.0 = 
+* Changed: Add theme support for wp-block-styles
+* Changed: Update clone template part as 500px wide group #14
+* Added: Add 404 template #14
+* Changed: Update theme.json to version:2. Not certain that it's absolutely necessary. #4
+* Changed: Wrap header part in a group #4
+* Changed: Simplify index.html template #4
+* Changed: Rework metadates template part to use the Row block #4
+* Changed: Rename block-templates and block-template-parts to templates and parts #14
+* Tested: With WordPress 5.9.1 and WordPress Multi Site
+* Tested: With Gutenberg 12.6.0
+* Tested: With PHP 8.0
+
 = 0.1.4 =
 * Changed: Improve styling with left and right padding/margins and normal font sizes #13
 
@@ -141,7 +154,7 @@ Improvement areas include:
 * Navigation link - changes hardcoded links from s.b/hm to the site URL 
 
 == Copyright ==
-(C) Copyright Herb Miller, Bobbing Wide 2021
+(C) Copyright Herb Miller, Bobbing Wide 2021, 2022
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
