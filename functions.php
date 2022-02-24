@@ -18,7 +18,7 @@ function written_support() {
     //add_theme_support( 'align-wide' );
 
     // Adding support for core block visual styles.
-    //add_theme_support( 'wp-block-styles' );
+    add_theme_support( 'wp-block-styles' );
 
     // Adding support for responsive embedded content.
     add_theme_support( 'responsive-embeds' );
