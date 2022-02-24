@@ -5,7 +5,7 @@
 * Tags: blocks, FSE, Gutenberg, full-site-editing
 * Requires at least: 5.5.1
 * Tested up to: 5.9.1
-* Version: 0.2.0
+* Version: 0.2.1
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,9 @@ The `parts` are:
 
 
 ## Change Log 
+# 0.2.1 
+* Changed: Update templates and parts from the database #14
+
 # 0.2.0 
 * Changed: Add theme support for wp-block-styles
 * Changed: Update clone template part as 500px wide group #14
