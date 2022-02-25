@@ -1,9 +1,8 @@
-/* (C) Copyright Bobbing Wide 2015, 2017, 2019, 2021 */
-/* Custom.css for genesis-hm theme */
-/* Note that this doesn't get ZIPped by tip.bat */
+/* (C) Copyright Bobbing Wide 2015, 2017, 2019, 2021, 2022 */
+/* Custom.css for written theme */
 
 /**
- * Overrides to genesis theme style.css for: 
+ * Overrides for:
  * - Colours
  * - Fonts 
  * - Padding and margins 
@@ -12,113 +11,13 @@
  * Let's see if this works!
  * 
  */
-.site-header {
-	background-color: #000000;
-	color: #ffffff;
-}
 
-
-.site-title a,
-.site-title a:hover,
-.site-title a:focus {
-	color: #ffffff;
-}
-
-.genesis-nav-menu a {
-   background: #D2D28E;
-   background: linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   background: -webkit-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   background: -moz-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   background: -o-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   background: -ms-linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   background: linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   -svg-background: linear-gradient(top, #DEDEAB 0, #C8C874 100%) no-repeat;
-   color: #5F5F26;
-}
-
-.genesis-nav-menu a {
-   border:1px solid #D2D28E;
-	 border-radius: 1px;
-   padding: 5px 17px;
-   margin: 30px 3px 2px 3px;
-   text-decoration: none;
-}
-
-.sub-menu a {
-	margin: 0px 3px 2px 3px;
-}
-
-.site-footer {
-	background-color: #d5e0c1;
-}
-
-.site-title {
-	font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
-	font-size: 41px;
-	font-size: 4.1rem;
-	font-weight: 400;
-}
-
-
-/**
- * We want the header image AND the title / description
- 
-
-	background: 
-		url( 'images/logo.png' ) no-repeat bottom left;
-	background-size: 60px, auto;
- */
-
-
-
-
-.header-image .site-title > a {
-}
-
-.title-area {
-
-	background: url(images/logo.png) no-repeat left;
-	float: left;
-	min-height: 70px;
-	
-	
-	background-size: 70px, auto;
-	background-color: #222;
-}
-
-
-.footer-widgets-1,
-.footer-widgets-2,
-.footer-widgets-3,
-.footer-widgets-4 {
-	/* width: 25%; */
-	padding-right: 1%;
-	float:left;
-	margin-top: 20px;
-}
-
-.footer-widgets-1 {
-	width: 33%;
-}
-
-.footer-widgets-2 {
-	width: 33%;
-}
-
-.footer-widgets-3 {
-	width: 14%;
-}
-
-.footer-widgets-4 {
-	width: 20%;
-}
-	
-.responsive-menu-icon::before {
-	color: #053b93;
-}
-
-span.bw_follow_me:hover {
+/* Hover styling for follow me using genericons and dashicons but not SVG */
+span.bw_follow_me:hover,
+a.svgicons:hover svg {
 	color: #f5f5f5;
+	fill: currentColor;
+	color: currentColor;
 }
 
 div.center img.full {
@@ -126,95 +25,17 @@ div.center img.full {
 	margin: 0 auto;
 }
 
-section#text-16 { background: transparent; padding: 0;}
 
-
-
-div.hover img.full { 
-    position: relative; 
-    margin: 0 auto; 
-    width: 100%;
-    
-}
-
-div.hover img.full:hover { 
-    opacity: 0.4;
-		
-		border: 1px solid grey;
-}   
-
-div.hover { 
-    position: relative;  
-}
-
-div.hover a { 
-	display:block; 
-}
-
-div.hover:after {
-    padding-top: 150%;
-  }
-  
-div.hover p { 
-    position: relative; 
-    width: 100%; 
-    overflow: hidden; 
-    -webkit-margin-before: 0px; 
-    -webkit-margin-after: -2px; 
-}
-div.hover span.title { 
-    display: block; 
-    bottom: 0%; 
-    position: absolute; 
-    margin: 0 auto; 
-    width: 100%;
-    padding: 2px 2px 2px 8px;
-}
-div.hover p.caption { 
-    position: absolute; 
-    top: 50%; 
-}
-div.hover p.description { 
-    position: absolute; 
-    top: 80%; 
- }
-
-div.hover span.title,
-div.hover p.caption,
-div.hover p.description { 
-    visibility: hidden;
-}
-
-
-div.hover:hover span.title {
-    visibility: visible;
-}
-
-div.hover:hover {
-    color: #fff;
-}
-
-div.hover:hover span.title {
-    background: #333;
-}
-
-div.hover a:-webkit-any-link {
-    text-decoration: none;
-}
-
-img.full,
-div.hover {
-    -webkit-transition: all 0.5s ease-in-out;
-	-moz-transition:    all 0.5s ease-in-out;
-	-ms-transition:     all 0.5s ease-in-out;
-	-o-transition:      all 0.5s ease-in-out;
-	transition:         all 0.5s ease-in-out;
-}
-
-
-.sidebar-primary .widget ul li:nth-of-type( odd ) {
+/**
+ Stripe styling, margin and padding for the latest posts block.
+ */
+ul.wp-block-latest-posts  li:nth-of-type( odd ) {
 	background-color: #f5f5f5;
-	/* margin: 3px 0; */
+
+}
+
+ul.wp-block-latest-posts li {
+	padding-left: 10px; margin: 3px 0;
 }
 
 .sidebar-primary .widget ul li li {
