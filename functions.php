@@ -13,7 +13,7 @@ function written_support() {
      *
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
-    add_theme_support( 'post-thumbnails' );
+    //add_theme_support( 'post-thumbnails' );
     // Adding support for alignwide and alignfull classes in the block editor.
     //add_theme_support( 'align-wide' );
 
@@ -43,6 +43,9 @@ function written_support() {
     //add_theme_support( 'custom-line-height' );
     // Add default posts and comments RSS feed links to head.
     //add_theme_support( 'automatic-feed-links' );
+
+	// See https://make.wordpress.org/core/2021/07/01/block-styles-loading-enhancements-in-wordpress-5-8/
+	add_filter( 'should_load_separate_core_block_assets', '__return_true' );
 }
 
 /**
