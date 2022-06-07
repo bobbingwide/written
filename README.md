@@ -4,8 +4,8 @@
 * Donate link: https://www.oik-plugins.com/oik/oik-donate/
 * Tags: blocks, FSE, Gutenberg, full-site-editing
 * Requires at least: 5.5.1
-* Tested up to: 5.9.1
-* Version: 0.2.1
+* Tested up to: 6.0.0
+* Version: 0.3.0
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,18 @@ The `parts` are:
 
 
 ## Change Log 
+# 0.3.0 
+* Changed: Add WP and oik-unloader blocks to footer
+* Changed: more custom CSS changes
+* Fixed: Avoid Warnings with Gutenberg 13.3.0 #17
+* Changed: Style latest posts and comments similarly #10
+* Changed: Improve widget alignment. Reintroduce stripes #10
+* Changed: Add settings.appearanceTools: true #14
+* Changed: Ensure we load separate core block assets. Add active-plugins block to footer #16
+* Changed: Override navigation-submenu using same logic as navigation-link #14
+* Tested: With WordPress 6.0.0
+* Tested: With Gutenberg 13.3.0
+
 # 0.2.1 
 * Changed: Update templates and parts from the database #14
 
