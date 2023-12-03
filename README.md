@@ -4,8 +4,8 @@
 * Donate link: https://www.oik-plugins.com/oik/oik-donate/
 * Tags: blocks, FSE, Gutenberg, full-site-editing
 * Requires at least: 5.5.1
-* Tested up to: 6.0.0
-* Version: 0.3.0
+* Tested up to: 6.4.1
+* Version: 0.3.1
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,14 @@ The `parts` are:
 
 
 ## Change Log 
+# 0.3.1 
+* Changed: Fluid typography? #18
+* Added:  Add some print styles
+* Fixed: Don't trailingslashit( null ) #20
+* Tested: With WordPress 6.4.1
+* Tested: With Gutenberg 17.1.4
+* Tested: With PHP 8.1 and PHP 8.2
+
 # 0.3.0 
 * Changed: Add WP and oik-unloader blocks to footer
 * Changed: more custom CSS changes
