@@ -154,3 +154,18 @@ hr.wp-block-separator {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+@media print {
+    header,
+    div.bw_clone_form{ display: none;}
+
+    .wp-block-group {
+        padding: 0px;
+    }
+    body {
+        line-height: normal;
+    }
+    h2.wp-block-post-title {
+        padding: 0px;
+    }
+}
