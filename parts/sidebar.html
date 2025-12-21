@@ -2,55 +2,85 @@
 <div class="wp-block-group" style="padding-top:20px;padding-right:2%;padding-bottom:20px;padding-left:2%"><!-- wp:search {"label":"Search","buttonText":"Search"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":40} -->
+<!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group -->
-<div class="wp-block-group"><!-- wp:heading {"level":4} -->
-    <h4>Recent Posts</h4>
-    <!-- /wp:heading -->
+<div class="wp-block-group"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Recent Posts</h3>
+<!-- /wp:heading -->
 
-    <!-- wp:latest-posts /--></div>
+<!-- wp:latest-posts /--></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":40} -->
+<!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group -->
-<div class="wp-block-group"><!-- wp:heading {"level":4} -->
-    <h4>Recent Comments</h4>
-    <!-- /wp:heading -->
+<div class="wp-block-group"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Today's word is this:</h3>
+<!-- /wp:heading -->
 
-    <!-- wp:latest-comments {"displayAvatar":false,"displayDate":false,"displayExcerpt":false} /--></div>
+<!-- wp:shortcode -->
+[twit]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Food-le.com</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[twit sequence=food-le.com]
+<!-- /wp:shortcode --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":40} -->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Foodlewordle.io</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[twit sequence=foodlewordle.io]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","right":"2%","bottom":"20px","left":"2%"}}}} -->
-<div class="wp-block-group" style="padding-top:0px;padding-right:2%;padding-bottom:20px;padding-left:2%"><!-- wp:archives {"displayAsDropdown":true} /--></div>
+<div class="wp-block-group" style="padding-top:0px;padding-right:2%;padding-bottom:20px;padding-left:2%"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Archives</h3>
+<!-- /wp:heading -->
+
+<!-- wp:archives {"displayAsDropdown":true} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":40} -->
+<!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","right":"2%","bottom":"20px","left":"2%"}}}} -->
-<div class="wp-block-group" style="padding-top:0px;padding-right:2%;padding-bottom:20px;padding-left:2%"><!-- wp:heading {"level":4} -->
-    <h4>Categories</h4>
-    <!-- /wp:heading -->
+<div class="wp-block-group" style="padding-top:0px;padding-right:2%;padding-bottom:20px;padding-left:2%"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Categories</h3>
+<!-- /wp:heading -->
 
-    <!-- wp:categories {"displayAsDropdown":true} /-->
+<!-- wp:categories {"displayAsDropdown":true} /-->
 
-    <!-- wp:paragraph -->
-    <p></p>
-    <!-- /wp:paragraph --></div>
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":40} -->
+<!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
