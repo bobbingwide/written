@@ -46,6 +46,7 @@ function written_support() {
 
 	// See https://make.wordpress.org/core/2021/07/01/block-styles-loading-enhancements-in-wordpress-5-8/
 	add_filter( 'should_load_separate_core_block_assets', '__return_true' );
+
 }
 
 /**
@@ -136,6 +137,10 @@ function written_init() {
     if ( function_exists( 'register_block_style')) {
         written_register_style();
     }
+    /**
+     * Prevent WooCommerce from adding <noscript> tags willy nilly
+     */
+    remove_action( 'wp_head', 'wc_gallery_noscript' );
 }
 
 require_once __DIR__ . '/includes/block-overrides.php';
