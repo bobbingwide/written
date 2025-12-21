@@ -3,8 +3,8 @@ Contributors: bobbingwide
 Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, full-site-editing
 Requires at least: 5.5.1
-Tested up to: 6.4.1
-Version: 0.3.1
+Tested up to: 6.9
+Version: 0.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,13 @@ Pre-requisite plugins: see also Notes
 
 
 == Change Log ==
+= 0.4.0 = 
+* Changed: Reconcile a11y changes from live site #13
+* Changed: Prevent WooCommerce's noscript from being produced to avoid WAVE alert #23
+* Changed: Add name attribute to fontFamilies to avoid warning from WooCommerce #21
+* Tested: With WordPress 6.9
+* Tested: With PHP 8.3
+
 = 0.3.1 = 
 * Changed: Fluid typography? #18
 * Added:  Add some print styles
@@ -177,7 +184,7 @@ Improvement areas include:
 * Navigation link - changes hardcoded links from s.b/hm to the site URL 
 
 == Copyright ==
-(C) Copyright Herb Miller, Bobbing Wide 2021, 2022
+(C) Copyright Herb Miller, Bobbing Wide 2021, 2022, 2023, 2025
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
